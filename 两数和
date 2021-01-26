@@ -1,0 +1,21 @@
+/*#include <stdio.h>
+int main()
+{
+  int num1,num2,num;
+  scanf("%d%d",&num1,&num2);
+ num=num1+num2;//可以直接输出num1+num2，如下代码 
+  printf("num=%d\n",num);
+ return 0;
+} */
+
+
+
+#include <stdio.h>
+int main()
+{
+   int num1,num2;
+   scanf("%d%d",&num1,&num2);
+   
+   printf("num=%d\n",num1+num2);
+   return 0;
+} 
