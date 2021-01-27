@@ -1,0 +1,60 @@
+//#include <stdio.h> 
+//int main()
+// {
+//    int mun=4;
+//   printf("mun=%d\n",mun) ;
+//  mun=10;
+//  printf("mun=%d\n",mun);
+//3;
+// 100;                         //字面常量 
+// 3.14;
+//   return 0;
+ 
+//}
+ 
+ 
+ //#include <stdio.h> 
+//int main()
+// {                                                    //（变量具有了常量的属性） 
+ //    const int mun=4;//const修饰的常变量 //const-常属性（mun不能再更改-常属性 
+                                                        // 但依然是变量） 
+ //    printf("mun=%d\n",mun) ;
+     //mun=10;                               所以再次给mun赋值显示错误（常属性） 
+ //    printf("mun=%d\n",mun);
+     
+ //    return 0;
+ 
+ //}
+
+
+
+//#include <stdio.h> 
+                          
+//#define max 10                         //#define 定义的标识符常量
+//int main()                              // (具有常量的性质)
+// {    
+ //     int arr[max]={0};
+ //     printf("max=%d\n",max);
+ //     return 0;
+ //}
+ 
+ 
+ 
+                              //enum（枚举关键字）       //枚举常量-一一列举
+#include <stdio.h> 
+enum xingbie
+{
+   nan,
+   nv,                                  //枚举常量（具有常亮的性质） 
+   baomi
+} ;                                       //性别：男 女  保密 
+int main()
+{
+  //enum xingbie fu=nan
+  printf("%d\n",nan); 
+   printf("%d\n",nv);
+    printf("%d\n",baomi);
+  return 0;
+}
+ 
+ 
