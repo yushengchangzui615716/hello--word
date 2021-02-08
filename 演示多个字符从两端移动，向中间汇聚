@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <windows.h>
+#include <stdlib.h> 
+int main() 
+{
+	char arr1[]="welcome to c shijie!!!!!!!";
+	char arr2[]="**************************";
+	int left=0;
+	int right=sizeof(arr1)/sizeof(arr1[0])-2;//因为是字符，数组结尾还有'\0',所以需要减2
+	//int right=strlen(arr1)-1;          //strlen计算个数，减一即可（角标）头文件<string.h> 
+	while(left<=right)
+	{
+	    arr2[left]=arr1[left];
+	    arr2[right]=arr1[right];
+	    printf("%s\n",arr2);
+	    Sleep(1000);       //休息一秒头文件<windows.h> S要大写 
+		system("cls");       //执行系统命令的一个函数-cls-清空屏幕 头文件<stdlib.h> 
+	    left++;
+        right--;
+        
+	}
+	 
+	 
+	return 0;
+}
