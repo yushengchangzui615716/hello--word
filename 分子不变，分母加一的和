@@ -1,0 +1,15 @@
+#include <stdio.h>
+int main()
+{
+	int i=0;
+	double sum=0;                          //小数用浮点型 
+	int flag=1;
+	for (i=1;i<=100;i++)
+    {
+    	sum+=flag*1.0/i;                      //小数   分子或分母需要有小数点                      
+        flag=-flag;
+  	}
+  	printf("%lf\n",sum);
+	
+	return 0;
+} 
